@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>My first Bulma website</title>
+
+      <!-- styles.css contains local changes  -->
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/styles.css">
+
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- select2.js -->
+      <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  </head>
+
+  <body>
+<!--  NAVBAR   -->
+    <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item navTitle" href="#">
+          <p class="is-primary-invert">Minerva</p>
+        </a>
+      </div>
+    </nav>
+
+      <!-- main container  -->
+    <section class="section beeg">
+        <div id="monoCont" class="container is-fluid">
+          <div id="boxEx" class="box has-background-black-ter">
+            <div class="columns is-centered is-vcentered">
+              <div class="column is-6 is-narrow monDropper">
+                  <p class="has-text-white is-family-secondary has-text-weight-semibold">Monomer:</p>
+                  <select class="selectpicker dropPicker">
+                    <option value="AL">Alabama</option>
+                      ...
+                    <option value="WY">Wyoming</option>
+                  </select>
+              </div>
+              <div class="column is-4 is-narrow">
+                <button class="button is-primary has-text-secondary has-text-weight-semibold" name="button" onclick="cloner()">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer  -->
+      <footer class="footer has-text-centered is-primary">
+        <div class="container">
+           <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <p>
+                <small>
+                  Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+                </small>
+              </p>
+              <p style="margin-top: 1rem;">
+                <a href="http://bulma.io">
+                  <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+
+</html>
