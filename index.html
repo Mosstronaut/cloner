@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>My first Bulma website</title>
+      <title>Minerva boilerplate</title>
 
       <!-- styles.css contains local changes  -->
       <link rel="stylesheet" href="css/main.css">
@@ -72,5 +72,24 @@
 
     <script type="text/javascript" src="lib/main.js"></script>
   </body>
+
+<!-- boxEx clone-->
+  <script id="newBox" type="text/html">
+    <div class="box has-background-black-ter">
+      <div class="columns is-centered is-vcentered">
+        <div class="column is-6 is-narrow monDropper">
+            <p class="has-text-white is-family-secondary has-text-weight-semibold">Monomer:</p>
+            <select class="selectpicker dropPicker">
+              <option value="AL">Alabama</option>
+                ...
+              <option value="WY">Wyoming</option>
+            </select>
+        </div>
+        <div class="column is-4 is-narrow">
+          <button class="button is-primary has-text-secondary has-text-weight-semibold" name="button" onclick="cloner()">Add</button>
+        </div>
+      </div>
+    </div>
+</script>
 
 </html>
